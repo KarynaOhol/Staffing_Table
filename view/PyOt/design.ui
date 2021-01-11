@@ -1,0 +1,1036 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>791</width>
+      <height>551</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Distribution</string>
+     </attribute>
+     <widget class="QLabel" name="lbDst">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>10</y>
+        <width>181</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>DISTRIBUTION</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblDivId">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>70</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Enter division ID</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblstaffId">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>100</y>
+        <width>111</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Enter staff unit ID</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblInf">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>210</y>
+        <width>351</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Please select one record below to update or delete</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblSal">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>430</y>
+        <width>51</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Salary</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblEntId">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>460</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Please enter ID:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="entDivID">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>70</y>
+        <width>113</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="entStaffID">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>100</y>
+        <width>113</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="entID">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>460</y>
+        <width>113</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnSearch">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>460</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Search</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnXlsx">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>160</y>
+        <width>81</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>81</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>xlsx</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnDocx">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>160</y>
+        <width>81</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>81</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>docx</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnReg">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>160</y>
+        <width>81</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>93</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>register</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="bntUpdate">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>160</y>
+        <width>81</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>93</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>update</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnDel">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>160</y>
+        <width>81</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>93</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>delete</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnSalary">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>160</y>
+        <width>81</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>93</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>salary</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnAll">
+      <property name="geometry">
+       <rect>
+        <x>690</x>
+        <y>160</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>93</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>show all</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnClear">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>160</y>
+        <width>81</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>81</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>clear</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>230</y>
+        <width>751</width>
+        <height>192</height>
+       </rect>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAsNeeded</enum>
+      </property>
+      <column>
+       <property name="text">
+        <string>Staff unit ID</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Position</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Persent2</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Salary</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Division ID</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Name</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Persent1</string>
+       </property>
+      </column>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Division</string>
+     </attribute>
+     <widget class="QPushButton" name="btnDocx_3">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>150</y>
+        <width>81</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>81</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>docx</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="entPer">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>90</y>
+        <width>113</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnXlsx_3">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>150</y>
+        <width>81</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>81</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>xlsx</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblName">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>60</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Enter name</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnAll_3">
+      <property name="geometry">
+       <rect>
+        <x>690</x>
+        <y>150</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>93</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>show all</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbDvs">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>0</y>
+        <width>181</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>DIVISION</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnReg_3">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>150</y>
+        <width>81</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>93</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>register</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnSearch_3">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>450</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Search</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnDel_3">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>150</y>
+        <width>81</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>93</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>delete</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnClear_3">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>150</y>
+        <width>81</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>81</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>clear</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>230</y>
+        <width>521</width>
+        <height>192</height>
+       </rect>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAsNeeded</enum>
+      </property>
+      <column>
+       <property name="text">
+        <string>ID</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Persent</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Type</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Name</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QLineEdit" name="entName">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>60</y>
+        <width>113</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="bntUpdate_3">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>150</y>
+        <width>81</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>93</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>update</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblstaffId_3">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>90</y>
+        <width>171</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Enter pers per inregular day</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblEntId_3">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>450</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Please enter ID:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="entID_3">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>450</y>
+        <width>113</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblInf_3">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>200</y>
+        <width>351</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Please select one record below to update or delete</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblType">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>120</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Enter type</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="entType">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>120</y>
+        <width>113</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Staff unit</string>
+     </attribute>
+     <widget class="QLabel" name="lblInf_8">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>210</y>
+        <width>351</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Please select one record below to update or delete</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblper1">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>100</y>
+        <width>201</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Enter pers for harmful conditions</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnDel_8">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>160</y>
+        <width>81</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>93</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>delete</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnClear_8">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>160</y>
+        <width>81</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>81</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>clear</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnAll_8">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>160</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>93</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>show all</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget_8">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>240</y>
+        <width>521</width>
+        <height>192</height>
+       </rect>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAsNeeded</enum>
+      </property>
+      <column>
+       <property name="text">
+        <string>ID</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Position</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Persent</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Name</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Vacation</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QLabel" name="lblSal_6">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>70</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Enter salary</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnDocx_8">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>160</y>
+        <width>81</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>81</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>docx</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="entPos">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>70</y>
+        <width>113</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnReg_8">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>160</y>
+        <width>81</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>93</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>register</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblEntId_8">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>460</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Please enter ID:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblPos">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>70</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Enter position</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblstaff">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>10</y>
+        <width>181</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Staff unit</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="entID_8">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>460</y>
+        <width>113</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnSearch_8">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>460</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Search</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnXlsx_8">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>160</y>
+        <width>81</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>81</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>xlsx</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="bntUpdate_8">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>160</y>
+        <width>81</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>93</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>update</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="entSal">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>70</y>
+        <width>113</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="entPers1">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>100</y>
+        <width>113</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="entVac">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>100</y>
+        <width>113</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblVac">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>100</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Enter vacation</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
